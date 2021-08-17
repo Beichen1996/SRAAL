@@ -7,9 +7,9 @@ def get_args():
     parser.add_argument('--dataset', type=str, default='cifar100', help='Name of the dataset used.')
     parser.add_argument('--classes', type=int, default=100, help='Number of classes in the target model.')
     parser.add_argument('--batch_size', type=int, default=250, help='Batch size used for training and testing')
-    parser.add_argument('--train_iterations', type=int, default=80, help='Number of training iterations') #20000
-    parser.add_argument('--task_epochs', type=int, default=5, help='Number of training iterations') #200
-    parser.add_argument('--latent_dim', type=int, default=100, help='The dimensionality of the VAE latent dimension')
+    parser.add_argument('--train_iterations', type=int, default=20000, help='Number of training iterations') #20000
+    parser.add_argument('--task_epochs', type=int, default=200, help='Number of training iterations') #200
+    parser.add_argument('--latent_dim', type=int, default=200, help='The dimensionality of the VAE latent dimension')
     parser.add_argument('--data_path', type=str, default='../data', help='Path to where the data is')
     parser.add_argument('--beta', type=float, default=1, help='Hyperparameter for training. The parameter for VAE')
     parser.add_argument('--num_adv_steps', type=int, default=1, help='Number of adversary steps taken for every task model step')
